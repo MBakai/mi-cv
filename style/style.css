@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f8f9fa;
+}
+
+.cv-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+}
+
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.photo-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    border: 4px solid rgba(255,255,255,0.3);
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.header .subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 0.95rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.content {
+    padding: 40px;
+}
+
+.section {
+    margin-bottom: 35px;
+}
+
+.section-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e9ecef;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-icon {
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+}
+
+.profile-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tech-category {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+.tech-category h4 {
+    color: #667eea;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.tech-list {
+    list-style: none;
+}
+
+.tech-list li {
+    padding: 4px 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.project {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #764ba2;
+}
+
+.project h4 {
+    color: #764ba2;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.project ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.project li {
+    padding: 4px 0;
+    color: #666;
+    font-size: 0.95rem;
+    position: relative;
+    padding-left: 15px;
+}
+
+.project li:before {
+    content: '▸';
+    color: #764ba2;
+    position: absolute;
+    left: 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.skill-item {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+}
+
+.education {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+.education h4 {
+    color: #667eea;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.education p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.hobbies-list, .references-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.hobby-item, .reference-item {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+}
+
+.reference-item {
+    text-align: left;
+}
+
+.reference-name {
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 5px;
+}
+
+.reference-phone {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .cv-container {
+        margin: 10px;
+    }
+    
+    .header {
+        padding: 30px 20px;
+    }
+    
+    .content {
+        padding: 30px 20px;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+}
