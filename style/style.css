@@ -147,6 +147,37 @@ a{
     font-size: 0.95rem;
 }
 
+.tech-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    border: 1px solid rgba(102, 126, 234, 0.1);
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.tech-item:hover {
+    background: rgba(102, 126, 234, 0.05);
+    border-color: rgba(102, 126, 234, 0.2);
+    transform: translateY(-1px);
+}
+
+.tech-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
 .project {
     background: #f8f9fa;
     padding: 25px;
@@ -194,6 +225,11 @@ a{
     border-radius: 8px;
     text-align: center;
     border: 1px solid #e9ecef;
+    transition: all 0.3s ease
+}
+
+.skill-item:hover{
+    transform: translateY(-5px);
 }
 
 .education {
@@ -226,10 +262,18 @@ a{
     border-radius: 8px;
     text-align: center;
     border: 1px solid #e9ecef;
+    transition: all 0.3s ease
+}
+.hobby-item:hover{
+    transform: translateY(-5px);
 }
 
 .reference-item {
     text-align: left;
+}
+
+.hobby-item:hover, .reference-item:hover{
+    transform: translateY(-5px);
 }
 
 .reference-name {
