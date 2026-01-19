@@ -1,234 +1,259 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mauricio Bustamante - CV</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <title>Mauricio Bustamante | Ingeniero de Sistemas</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./style/style.css">
 </head>
+
 <body>
-    <div class="cv-container">
-        <!-- Header Section -->
-        <div class="header">
-            <div class="photo-placeholder">
-                <img src="./assets/mauro face.jpg" alt="">
-            </div>
-            <h1>Mauricio Bustamante</h1>
-            <div class="subtitle">Ingeniero de Sistemas | Desarrollador Backend y Frontend</div>
-            <div class="contact-info">
 
-                <div class="contact-item">
-                    <span>📞</span>
-                    <span>320 516 4804</span>
-                </div>
-                <div class="contact-item">
-                    <span>💼</span>
-                   <a href="https://github.com/MBakai"> <span>github.com/MBakai</span></a>
-                </div>
-                <div class="contact-item">
-                    <span>🔗</span>
-                    <a href="https://www.linkedin.com/in/mauricio-bustamante-mejía-8593852a6/"><span>LinkedIn Profile</span></a>
-                </div>
-            </div>
-            <a href="https://drive.google.com/file/d/1ui6uaUIrjwFjsJT6ArJpf5GxxTiARuFe/view?usp=sharing" target="_blank">
-                <button class="download-btn">
-                    <span>📄</span>
-                    Descarga mi CV
-                </button>
-            </a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">MB.</a>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <!-- Content Section -->
-        <div class="content">
-            <!-- Perfil Profesional -->
-            <div class="section">
-                <h3 class="section-title">
-                    <div class="section-icon">👤</div>
-                    Perfil Profesional
-                </h3>
-                <p class="profile-text">
-                    Ingeniero de Sistemas con experiencia construyendo aplicaciones web modernas y escalables. 
-                    Especializado en NestJS, TypeORM y PostgreSQL, con conocimientos integrales del flujo 
-                    frontend-backend y trabajo colaborativo con equipos de desarrollo. Enfocado en mantener 
-                    buenas prácticas de arquitectura, código limpio, validaciones robustas y control seguro 
-                    de autenticación y roles.
-                </p>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="profile-img-container">
+                <img src="./assets/mauro face.jpg" alt="Mauricio Bustamante" class="profile-img">
+            </div>
+            <h1>Mauricio Bustamante Mejía</h1>
+            <h2 class="typing-text">Ingeniero de Sistemas & Desarrollador Fullstack</h2>
+            <p>Especializado en crear aplicaciones web modernas, escalables y eficientes.</p>
+
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Contáctame</a>
+                <a href="https://drive.google.com/file/d/1ui6uaUIrjwFjsJT6ArJpf5GxxTiARuFe/view?usp=sharing"
+                    target="_blank" class="btn btn-outline">
+                    <i class='bx bxs-download'></i> Descargar CV
+                </a>
             </div>
 
-            <!-- Tecnologías -->
-            <div class="section">
-                <h3 class="section-title">
-                    <div class="section-icon">🛠️</div>
-                    Tecnologías y Herramientas
-                </h3>
-                <div class="tech-grid">
-                    <div class="tech-category">
-                        <h4>Lenguajes y Frameworks</h4>
-                        <div class="tech-items">
-                            <div class="tech-item">
-                                <i class="devicon-nestjs-plain colored tech-icon"></i>
-                                <span>NestJS</span>
-                            </div>
+            <div class="social-links">
+                <a href="https://github.com/MBakai" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/mauricio-bustamante-mej%C3%ADa-8593852a6/" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="mailto:mauro2402@hotmail.com"><i class='bx bxs-envelope'></i></a>
+            </div>
+        </div>
+    </header>
 
-                            <div class="tech-item">
-                                <i class="devicon-nodejs-plain colored tech-icon"></i>
-                                <span>Node.js</span>
-                            </div>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Soy <strong>Ingeniero de Sistemas</strong> con experiencia desarrollando aplicaciones web
+                        modernas.
+                        Me especializo en <strong>NestJS con TypeORM y PostgreSQL</strong>, y poseo conocimientos
+                        completos del flujo
+                        frontend-backend con <strong>Angular</strong>, trabajando de manera coordinada con equipos de
+                        desarrollo.
+                    </p>
+                    <p>
+                        Me caracterizo por implementar soluciones escalables, limpias y orientadas a buenas prácticas,
+                        manteniendo un enfoque constante en la mejora continua del producto. Además, cuento con
+                        conocimientos
+                        en mantenimiento preventivo y correctivo de computadores.
+                    </p>
+                </div>
 
-                            <div class="tech-item">
-                                <i class="devicon-typescript-plain colored tech-icon"></i>
-                                <span>TypeScript</span>
-                            </div>
-
-                            <div class="tech-item">
-                                <i class="devicon-angularjs-plain colored tech-icon"></i>
-                                <span>Angular 18</span>
-                            </div>
-
-                            <div class="tech-item">
-                                <i class="devicon-postgresql-plain colored tech-icon"></i>
-                                <span>PostgreSQL</span>
-                            </div>
-
-                            <div class="tech-item">
-                                <img src="https://cdn.simpleicons.org/jsonwebtokens/000000" alt="JWT" class="tech-icon" />
-                                <span>JWT</span>
-                            </div>
-
-                            <div class="tech-item">
-                                <i class="devicon-firebase-plain colored tech-icon"></i>
-                                <span>Firebase</span>
-                            </div>
+                <div class="education-card">
+                    <h3><i class='bx bxs-graduation'></i> Formación Académica</h3>
+                    <div class="edu-item">
+                        <span class="year">2023</span>
+                        <div class="edu-info">
+                            <h4>Ingeniería de Sistemas</h4>
+                            <p>Universidad del Pacífico</p>
                         </div>
                     </div>
-                    <div class="tech-category">
-                        <h4>Herramientas y Servicios</h4>
-                        <div class="tech-items">
-                            <div class="tech-item">
-                                <img src="https://cdn.simpleicons.org/cloudinary/3448C5" alt="Cloudinary" class="tech-icon" />
-                                <span>Cloudinary</span>
-                            </div>
-
-                            <div class="tech-item">
-                                <img src="https://cdn.simpleicons.org/gmail/EA4325" alt="Nodemailer" class="tech-icon" />
-                                <span>Nodemailer</span>
-                            </div>
-
-                            <div class="tech-item">
-                                <i class="devicon-github-original tech-icon"></i>
-                                <span>Git & GitHub</span>
-                            </div>
-
-                            <div class="tech-item">
-                                <i class="devicon-postman-plain tech-icon"></i>
-                                <span>Postman</span>
-                            </div>
-
-                            <div class="tech-item">
-                                <i class="devicon-vscode-plain tech-icon"></i>
-                                <span>VS Code</span>
-                            </div>
-
-                            <div class="tech-item">
-                                <i class="devicon-yarn-plain tech-icon"></i>
-                                <span>Yarn</span>
-                            </div>
+                    <div class="edu-item">
+                        <span class="year">2023</span>
+                        <div class="edu-info">
+                            <h4>Diplomado en Calidad de Software</h4>
+                            <p>Universidad del Pacífico</p>
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <span class="year">2025</span>
+                        <div class="edu-info">
+                            <h4>Certificado en NestJS: Backend Escalable</h4>
+                            <p>Udemy - <a href="https://ude.my/UC-d92fce9f-81a1-4c02-b5e6-fb13a37c19be"
+                                    target="_blank">Ver Credencial</a></p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Proyectos -->
-            <div class="section">
-                <h3 class="section-title">
-                    <div class="section-icon">📦</div>
-                    Proyectos Destacados
-                </h3>
-                <div class="project">
-                    <h4>Meshwork - Aplicación de Gestión de Tareas</h4>
-                    <ul>
-                        <li>Backend modular en NestJS con DTOs, controladores y servicios bien definidos</li>
-                        <li>Creación de tareas con subtareas, asignación de usuarios, estados y fechas</li>
-                        <li>Sistema completo de autenticación con JWT (access y refresh tokens)</li>
-                        <li>Verificación de correo con NodeMailer y protección de rutas según roles</li>
-                        <li>Envío y gestión de solicitudes de colaboración entre usuarios</li>
-                        <li>Frontend en Angular 18 standalone con integración total vía servicios HTTP</li>
-                        <li><strong>link de del proyecto: <a class="proyectos" href="https://meshwork-frontend.vercel.app/">Meshwork-app</a></strong></li>
-                    </ul>
-                </div>
-            </div>
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Experiencia Laboral</h2>
 
-            <!-- Habilidades -->
-            <div class="section">
-                <h3 class="section-title">
-                    <div class="section-icon">🧩</div>
-                    Habilidades Clave
-                </h3>
-                <div class="skills-grid">
-                    <div class="skill-item">Refactorización y código limpio</div>
-                    <div class="skill-item">Control de versiones Git</div>
-                    <div class="skill-item">Validación robusta de datos</div>
-                    <div class="skill-item">Trabajo colaborativo</div>
-                    <div class="skill-item">Buenas prácticas de desarrollo</div>
-                    <div class="skill-item">Mejora continua</div>
-                </div>
-            </div>
+            <div class="timeline">
 
-            <!-- Formación -->
-            <div class="section">
-                <h3 class="section-title">
-                    <div class="section-icon">🎓</div>
-                    Formación Académica
-                </h3>
-                <div class="education">
-                    <h4>Ingeniería de Sistemas</h4>
-                    <p>Universidad del Pacífico | 2015-2 - 2023-2</p>
-                </div>
-                <br>
-                <div class="education">
-                    <h4>Diplomado en Software de Calidad</h4>
-                    <p>2013-1 - 2023-2</p>
-                </div>
-            </div>
-
-            <!-- Aficiones -->
-            <div class="section">
-                <h3 class="section-title">
-                    <div class="section-icon">💡</div>
-                    Intereses y Aficiones
-                </h3>
-                <div class="hobbies-list">
-                    <div class="hobby-item">Resolver problemas lógicos</div>
-                    <div class="hobby-item">Dibujar</div>
-                    <div class="hobby-item">Hacer deporte</div>
-                    <div class="hobby-item">Aprender nuevas tecnologías</div>
-                </div>
-            </div>
-
-            <!-- Referencias -->
-            <div class="section">
-                <h3 class="section-title">
-                    <div class="section-icon">👥</div>
-                    Referencias Personales
-                </h3>
-                <div class="references-list">
-                    <div class="reference-item">
-                        <div class="reference-name">Arnold Mauricio Sinisterra</div>
-                        <div class="reference-phone">316 696 3946</div>
-                    </div>
-                    <div class="reference-item">
-                        <div class="reference-name">Jhon Jader Estrada</div>
-                        <div class="reference-phone">318 453 5680</div>
-                    </div>
-                    <div class="reference-item">
-                        <div class="reference-name">Andres Porto Castro</div>
-                        <div class="reference-phone">305 2960588</div>
+                <!-- Adyton Academy -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="role">Desarrollador FullStack</span>
+                        <h3>Adyton Academy</h3>
+                        <p class="description">Aplicación web de venta de cursos en línea con módulos administrativos y
+                            de usuario.</p>
+                        <ul class="tasks">
+                            <li>Desarrollo de arquitectura DB y lógica de negocio.</li>
+                            <li>Auth con JWT, HttpOnly y Refresh Tokens.</li>
+                            <li>Integración de Cloudinary, Resend, Render y pasarela Wompi.</li>
+                            <li>Desarrollo de módulos de cursos, exámenes, certificaciones y dashboard.</li>
+                        </ul>
+                        <div class="tags">
+                            <span>NestJS</span><span>Angular 18</span><span>PostgreSQL</span><span>Docker</span>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Meshwork -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="role">Práctica Profesional</span>
+                        <h3>Meshwork (Gestión de Tareas)</h3>
+                        <p class="description">Aplicación web colaborativa desplegada en Vercel y Render.</p>
+                        <ul class="tasks">
+                            <li>Sistema de tareas, subtareas y colaboración en tiempo real.</li>
+                            <li>Notificaciones y validación de roles en endpoints.</li>
+                            <li>Backend modular escalable y Frontend Standalone.</li>
+                        </ul>
+                        <div class="tags">
+                            <span>Angular</span><span>NodeJS</span><span>JWT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Electron Dev -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="role">Desarrollador Electron / TypeScript</span>
+                        <h3>Aplicación Desktop de Gestión</h3>
+                        <p class="description">Sistema desktop para control de empleados y gastos.</p>
+                        <ul class="tasks">
+                            <li>Persistencia de datos con SQLite.</li>
+                            <li>Pipelines con electron-builder para instaladores .exe.</li>
+                            <li>Vistas dinámicas con Bootstrap 5.</li>
+                        </ul>
+                        <div class="tags">
+                            <span>Electron</span><span>TypeScript</span><span>SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+
+            <div class="skills-wrapper">
+
+                <div class="skill-category">
+                    <h3><i class='bx bx-server'></i> Backend</h3>
+                    <div class="skill-grid">
+                        <div class="skill"><i class="devicon-nestjs-plain colored"></i> NestJS</div>
+                        <div class="skill"><i class="devicon-nodejs-plain colored"></i> Node.js</div>
+                        <div class="skill"><i class="devicon-typescript-plain colored"></i> TypeScript</div>
+                        <div class="skill"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</div>
+                        <div class="skill"><i class='bx bxs-data' style="color: #e34c26;"></i> TypeORM</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class='bx bx-code-alt'></i> Frontend</h3>
+                    <div class="skill-grid">
+                        <div class="skill"><i class="devicon-angularjs-plain colored"></i> Angular 18</div>
+                        <div class="skill"><i class="devicon-html5-plain colored"></i> HTML5</div>
+                        <div class="skill"><i class="devicon-css3-plain colored"></i> CSS3</div>
+                        <div class="skill"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class='bx bx-wrench'></i> Herramientas</h3>
+                    <div class="skill-grid">
+                        <div class="skill"><i class="devicon-git-plain colored"></i> Git</div>
+                        <div class="skill"><i class="devicon-docker-plain colored"></i> Docker</div>
+                        <div class="skill"><i class="devicon-electron-original colored"></i> Electron</div>
+                        <div class="skill"><i class="devicon-postman-plain colored"></i> Postman</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="contact-details">
+                <h2>Contáctame</h2>
+                <div class="contact-row">
+                    <i class='bx bxs-phone'></i> <span>+57 320 516 4804</span>
+                </div>
+                <div class="contact-row">
+                    <i class='bx bxs-envelope'></i> <span>mauro2402@hotmail.com</span>
+                </div>
+                <div class="contact-row">
+                    <i class='bx bxs-map'></i> <span>Diagonal 39sur #9b-06</span>
+                </div>
+                <div class="contact-row">
+                    <i class='bx bx-globe'></i> <a href="https://mbakai.github.io/mi-cv/"
+                        style="color:var(--text-secondary)">mbakai.github.io/mi-cv</a>
+                </div>
+            </div>
+
+            <div class="references">
+                <h3>Referencias Personales</h3>
+                <ul>
+                    <li><strong>Arnold Sinisterra:</strong> 316 696 3946</li>
+                    <li><strong>Jhon Jader Estrada:</strong> 318 453 5680</li>
+                    <li><strong>Andres Porto Castro:</strong> 305 296 0588</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mauricio Bustamante.</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
